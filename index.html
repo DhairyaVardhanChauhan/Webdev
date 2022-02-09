@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaVirus- Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="virus.png">
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="media.css" media="screen and (min-width: 1496px)">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .items a {
+            text-decoration: none;
+            color: honeydew;
+            font-weight: bold;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            padding: 21px;
+
+        }
+
+        .items a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 8px;
+        }
+
+        button.navbtn:hover {
+            cursor: pointer;
+            background-color: darkgreen;
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            background-color: rgba(31, 30, 30, 0.788);
+            list-style: none;
+            height: 153px;
+            position: sticky;
+            top: 0px;
+        }
+
+        nav li {
+            padding: 23px;
+        }
+
+        .items {
+            padding: 23px;
+            margin: auto 16px;
+            padding: 14px;
+            font-size: 23px;
+        }
+
+        #imgnav {
+            height: 100px;
+            padding: 23px;
+            filter: invert(100%);
+            margin-right: 8px;
+
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 12px auto;
+            text-align: center;
+            padding: 69px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            font-size: 20px;
+
+
+        }
+
+        .navbtn {
+
+            background-color: white;
+            padding: 11px;
+            margin: auto 12px;
+            border-radius: 9px;
+            font-family: 'Supermercado One', cursive;
+            font-size: 20px;
+            display: flex;
+            font-weight: bold;
+        }
+
+        .navholder {
+            padding: 11px;
+            margin: auto 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            display: block;
+            padding: 40px;
+            height: 80%;
+            width: 80%;
+            margin: auto;
+
+
+        }
+
+        .video {
+            background-color: black;
+            height: 500px;
+            width: 100%;
+            margin:auto
+
+
+        }
+
+
+        #navpara {
+            background-color: cornflowerblue;
+            margin: 23px;
+            padding: 43px;
+
+        }
+
+        body {
+            background: url("bg1.jpg") center center/cover no-repeat;
+        }
+
+        div #changebg {
+            height: 700px;
+            width: 1520px;
+        }
+
+        #bgbtn {
+            display: flex;
+            flex-direction: row;
+            font-size: 60px;
+            color: white;
+            background-color: rgb(32, 32, 32);
+            border: none;
+
+        }
+
+        #bgbtn:hover{
+            cursor:pointer;
+            background-color: rgb(127, 182, 17);
+            color: black;
+        }
+
+        #imgchanger {
+            display: flex;
+        }
+
+        .container h1 {
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+
+        .container h2,
+        h3,
+        p {
+            padding: 20px;
+            font-family: 'Lobster', cursive;
+        }
+
+        .container h3,
+        summary {
+            text-align: left;
+            padding: 20px;
+            padding-left: 0px;
+            margin-left: 0px;
+            font-family: 'Lobster', cursive;
+        }
+
+        ul>li {
+            text-align: left;
+            padding-left: 49px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            font-weight: bold;
+            list-style: inside;
+            /*This positions the dots of the list inside*/
+        }
+
+        .dos {
+            color: green;
+        }
+
+        .donts {
+            color: red;
+        }
+
+        .container h2 {
+            color: rgb(228, 195, 10);
+        }
+
+        .faq p {
+            color: rgb(4, 53, 83);
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            text-align: left;
+            font-weight: bold;
+
+        }
+
+        .faq li {
+            margin: 33px;
+            list-style: inside;
+            font-weight: bold;
+        }
+
+        summary:hover{
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        /*Section area*/
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #box1,
+        #box2,
+        #box3 {
+            border: 7px solid red;
+            height: 600px;
+            width: 450px;
+            margin: auto 20px;
+            background-color: wheat;
+            text-align: center;
+        }
+
+
+        #box1 img,
+        #box2 img,
+        #box3 img {
+            height: 450px;
+            width: 450px;
+        }
+
+        #box1 p,
+        #box2 p,
+        #box3 p {
+            font-family: 'Anton', sans-serif;
+            background-color: gold;
+            height: 35px;
+            
+        }
+
+        #box1 a:hover,
+        #box2 a:hover,
+        #box3 a:hover{
+            color: mediumblue;
+
+
+        } 
+
+        /*Footer area*/
+        footer {
+            background-color: black;
+            color: white;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            display: flex;
+            justify-content: center;
+            border: gray solid 5px;
+            height: 100px;
+            width: 1520px;
+            margin-top: 10px;
+        }
+    </style>
+
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('changebg');
+            if (image.src.match("img1.jpg")) {
+                image.src = "img2.jpg";
+            }
+            else {
+                image.src = "img1.jpg";
+            }
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="logo.png" alt="404 ERROR" id="imgnav">
+        </div>
+        <li class="items"><a href="/">Home</a></li>
+        <li class="items"><a href="/">About</a></li>
+        <li class="items"><a href="/">MHFW website</a></li>
+        <li class="items"><a href="/">Hospitals</a></li>
+        <li class="items"><a href="/">Contact Us</a></li>
+        <div class="navholder">
+            <button class="navbtn">vaccines</button>
+            <button class="navbtn">Book now</button>
+        </div>
+    </nav>
+
+    <div id="imgchanger">
+        <img id="changebg" src="img1.jpg" alt="ERROR">
+        <input type="button" onclick="changeImage()" value=">" id="bgbtn" />
+
+    </div>
+    <div class="container">
+        <h1>COVID-19 ~ Stay Home Stay Safe</h1>
+        <h2>#IndiaFightsCorona ~ Covid 19</h2>
+        <p>COVID-19 (Coronavirus) has affected day to day life and is slowing down the global economy. This pandemic has
+            affected thousands of peoples, who are either sick or are being killed due to the spread of this disease.
+            The most common symptoms of this viral infection are fever, cold, cough, bone pain and breathing problems,
+            and ultimately leading to pneumonia. This, being a new viral disease affecting humans for the first time,
+            vaccines are not yet available. Thus, the emphasis is on taking extensive precautions such as extensive
+            hygiene protocol (e.g., regularly washing of hands, avoidance of face to face interaction etc.), social
+            distancing, and wearing of masks, and so on. This virus is spreading exponentially region wise. Countries
+            are banning gatherings of people to the spread and break the exponential curve.1 , 2 Many countries are
+            locking their population and enforcing strict quarantine to control the spread of the havoc of this highly
+            communicable disease.</p>
+
+        <p>COVID-19 has rapidly affected our day to day life, businesses, disrupted the world trade and movements.
+            Identification of the disease at an early stage is vital to control the spread of the virus because it very
+            rapidly spreads from person to person. Most of the countries have slowed down their manufacturing of the
+            products.3 , 4 The various industries and sectors are affected by the cause of this disease; these include
+            the pharmaceuticals industry, solar power sector, tourism, Information and electronics industry. This virus
+            creates significant knock-on effects on the daily life of citizens, as well as about the global economy.</p>
+
+        <h2>How to protect yourself</h2>
+        <h3 class="dos">What has to be done</h2>
+            <ul>
+                <li>Maintain Hygiene</li>
+                <li>Practice Social Distancing</li>
+                <li>Seek Medical Help if Symptoms Occur</li>
+            </ul>
+            <h3 class="donts">what to be avoided</h3>
+            <ul>
+                <li>Avoid Assuming That You are Immune to COVID-19</li>
+                <li> Don't Ignore Government-issued Advice</li>
+                <li>Avoid Stepping Out Without a Face Cover</li>
+            </ul>
+            <div class="faq">
+                <h2>#FAQ's - Frequently Asked Questions</h2>
+                <details>
+                    <summary>How long is the incubation period for COVID-19?</summary>
+                    <p>The time taken by the symptoms to first appear on an infected individual. The incubation time for
+                        COVID-19 ranges from 1-14 days, most commonly being around 5 days.</p>
+                </details>
+
+                <details>
+                    <summary>Can people with mild COVID-19 symptoms recover at home?</summary>
+                    <p>People with mild symptoms who are otherwise healthy should manage their symptoms at home. On
+                        average it takes 5–6 days from when someone is infected with the virus for symptoms to show,
+                        however it can take up to 14 days.</p>
+                </details>
+
+                <details>
+                    <summary>Are COVID-19 vaccines safe even though the vaccines were developed rapidly?</summary>
+                    <p>While COVID-19 vaccines were developed rapidly, all steps were taken to make sure they are safe
+                        and effective:
+                    <ul>
+                        <li>Approach to Development – Scientists have been working for many years to develop vaccines
+                            against viruses like the one that causes COVID-19. This knowledge helped speed up the
+                            initial development of the current COVID-19 vaccines.</li>
+                        <li>Clinical Trials – All vaccines in the United States must go through three phases of clinical
+                            trials to make sure they are safe and effective. During the development of COVID-19
+                            vaccines, phases overlapped to speed up the process, but all phases were completed.</li>
+                        <li>Authorization or Approval – Before vaccines are available to people, the U.S. Food and Drug
+                            Administration (FDA) assesses the findings from clinical trials. FDA determined that three
+                            COVID-19 vaccines met FDA's safety and effectiveness standards and granted those vaccines
+                            Emergency Use Authorizations (EUAs). This allowed the vaccines to be quickly distributed to
+                            control the pandemic.</li>
+                    </ul>
+                    </p>
+                </details>
+            </div>
+            
+
+    </div>
+    <div class="video">
+        <iframe width="1800" height="315"
+            src="https://www.youtube.com/embed/-TPB-xePMcU?playlist=-TPB-xePMcU&loop=1&autoplay=1&mute=1&showinfo=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</body>
+
+<section>
+    <div id="box1">
+        <img src="box1.png" alt="ERROR">
+        <p>COVID-19 CHEAP EXPERT CARE</p>
+        <p><a href="https://www.homecareexperts.com.au/" target="_blank">read more</a></p>
+    </div>
+
+    <div id="box2">
+        <img src="box2.jpg" alt="ERROR">
+        <p>COVID-19 AND THE EFFECT ON THE ECONOMY</p>
+        <p><a href="https://timesofindia.indiatimes.com/readersblog/shreyansh-mangla/impact-of-covid-19-on-indian-economy-2-35042/" target="_blank"> read more</a></p>
+        
+    </div>
+
+    <div id="box3">
+        <img src="box3.png" alt="ERROR">
+        <p>INTERNET GROWTH DUE TO COVID 19</p>
+        <p><a href="https://www.internetsociety.org/resources/doc/2020/impact-of-covid-19-on-the-internet-ecosystem-in-mena/#:~:text=The%20Coronavirus%20(COVID%2D19),patients%20to%20access%20healthcare%20services." target="_blank">read more</a></p>
+    </div>
+</section>
+
+<footer>&copy;Govt.India| All rights reserved</footer>
+
+</html>

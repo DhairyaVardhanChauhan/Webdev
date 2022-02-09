@@ -1,0 +1,32 @@
+
+.items a {
+    text-decoration: none;
+    padding: 50px;
+    color:red;
+}
+
+
+nav{
+    width: 100%;
+}
+
+.items {
+    padding: 14px;
+    font-size: 30px;
+}
+
+
+#imgchanger {
+    display: flex;
+    justify-content: center;
+    width:100%
+}
+
+#bgbtn {
+    width: 2%;
+}
+
+footer {
+    width: 100%;
+}
+
