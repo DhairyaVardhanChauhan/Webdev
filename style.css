@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: url("bg1.jpg") center center/cover no-repeat;
+  width: 100%;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(31, 30, 30, 0.788);
+  height: 153px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+
+.nav-link {
+  white-space: nowrap;
+}
+
+.link-container {
+  display: flex;
+}
+
+.items a {
+  text-decoration: none;
+  color: honeydew;
+  font-weight: bold;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  padding: 21px;
+}
+
+.items a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+}
+
+.navbtn:hover {
+  cursor: pointer;
+  background-color: darkgreen;
+  color: white;
+}
+
+.items {
+  padding: 23px;
+  margin: auto 16px;
+  padding: 14px;
+  font-size: 23px;
+}
+
+#imgnav {
+  height: 100px;
+  padding: 23px;
+  filter: invert(100%);
+  margin-right: 8px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 12px auto;
+  text-align: center;
+  padding: 69px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.navbtn {
+  background-color: white;
+  padding: 11px;
+  margin: auto 12px;
+  border-radius: 9px;
+  font-family: "Supermercado One", cursive;
+  font-size: 20px;
+  display: flex;
+  font-weight: bold;
+}
+
+.navholder {
+  padding: 11px;
+  margin: auto 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Youtube Video */
+
+iframe {
+  display: block;
+  padding: 40px;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+
+.video {
+  background-color: black;
+  height: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+#navpara {
+  background-color: cornflowerblue;
+  margin: 23px;
+  padding: 43px;
+}
+
+#changebg {
+  height: 700px;
+  width: 1520px;
+}
+
+#bgbtn {
+  display: flex;
+  flex-direction: row;
+  font-size: 60px;
+  color: white;
+  background-color: rgb(32, 32, 32);
+  border: none;
+}
+
+#bgbtn:hover {
+  cursor: pointer;
+  background-color: rgb(127, 182, 17);
+  color: black;
+}
+
+#imgchanger {
+  display: flex;
+  width: 100%;
+}
+
+.container h1 {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.container h2,
+h3,
+p {
+  padding: 20px;
+  font-family: "Lobster", cursive;
+}
+
+.container h3,
+summary {
+  text-align: left;
+  padding: 20px;
+  padding-left: 0px;
+  margin-left: 0px;
+  font-family: "Lobster", cursive;
+}
+
+.summary-list {
+  text-align: left;
+  padding-left: 49px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-weight: bold;
+  list-style: inside;
+  /*This positions the dots of the list inside*/
+}
+
+.dos {
+  color: green;
+}
+
+.donts {
+  color: red;
+}
+
+.container h2 {
+  color: rgb(228, 195, 10);
+}
+
+.faq p {
+  color: rgb(4, 53, 83);
+  font-family: "Baloo Bhaijaan 2", cursive;
+  text-align: left;
+  font-weight: bold;
+}
+
+.faq li {
+  margin: 33px;
+  list-style: inside;
+  font-weight: bold;
+}
+
+summary:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+/*Section area*/
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  border: 7px solid red;
+  height: 550px;
+  width: 450px;
+  margin: auto 20px;
+  background-color: gold;
+  text-align: center;
+  position: relative;
+}
+
+#box img {
+  height: 450px;
+  width: 450px;
+}
+
+.box-text {
+  height: 20px;
+}
+
+.box-link {
+  font-family: "Anton", sans-serif;
+  background-color: wheat;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 3px;
+}
+
+.box-link a:hover {
+  color: mediumblue;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*Footer area*/
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: gray solid 5px;
+  height: 100px;
+  width: 1520px;
+  margin-top: 10px;
+  width: 100%;
+}

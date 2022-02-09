@@ -12,307 +12,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="media.css" media="screen and (min-width: 1496px)">
-    <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        .items a {
-            text-decoration: none;
-            color: honeydew;
-            font-weight: bold;
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            padding: 21px;
-
-        }
-
-        .items a:hover {
-            background-color: white;
-            color: black;
-            border-radius: 8px;
-        }
-
-        button.navbtn:hover {
-            cursor: pointer;
-            background-color: darkgreen;
-            color: white;
-
-        }
-
-        nav {
-            display: flex;
-            background-color: rgba(31, 30, 30, 0.788);
-            list-style: none;
-            height: 153px;
-            position: sticky;
-            top: 0px;
-        }
-
-        nav li {
-            padding: 23px;
-        }
-
-        .items {
-            padding: 23px;
-            margin: auto 16px;
-            padding: 14px;
-            font-size: 23px;
-        }
-
-        #imgnav {
-            height: 100px;
-            padding: 23px;
-            filter: invert(100%);
-            margin-right: 8px;
-
-        }
-
-        .container {
-            max-width: 80%;
-            margin: 12px auto;
-            text-align: center;
-            padding: 69px;
-            background-color: whitesmoke;
-            border-radius: 10px;
-            font-size: 20px;
+    <link rel="stylesheet" href="style.css">
 
 
-        }
-
-        .navbtn {
-
-            background-color: white;
-            padding: 11px;
-            margin: auto 12px;
-            border-radius: 9px;
-            font-family: 'Supermercado One', cursive;
-            font-size: 20px;
-            display: flex;
-            font-weight: bold;
-        }
-
-        .navholder {
-            padding: 11px;
-            margin: auto 12px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        iframe {
-            display: block;
-            padding: 40px;
-            height: 80%;
-            width: 80%;
-            margin: auto;
-
-
-        }
-
-        .video {
-            background-color: black;
-            height: 500px;
-            width: 100%;
-            margin:auto
-
-
-        }
-
-
-        #navpara {
-            background-color: cornflowerblue;
-            margin: 23px;
-            padding: 43px;
-
-        }
-
-        body {
-            background: url("bg1.jpg") center center/cover no-repeat;
-        }
-
-        div #changebg {
-            height: 700px;
-            width: 1520px;
-        }
-
-        #bgbtn {
-            display: flex;
-            flex-direction: row;
-            font-size: 60px;
-            color: white;
-            background-color: rgb(32, 32, 32);
-            border: none;
-
-        }
-
-        #bgbtn:hover{
-            cursor:pointer;
-            background-color: rgb(127, 182, 17);
-            color: black;
-        }
-
-        #imgchanger {
-            display: flex;
-        }
-
-        .container h1 {
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
-
-
-        .container h2,
-        h3,
-        p {
-            padding: 20px;
-            font-family: 'Lobster', cursive;
-        }
-
-        .container h3,
-        summary {
-            text-align: left;
-            padding: 20px;
-            padding-left: 0px;
-            margin-left: 0px;
-            font-family: 'Lobster', cursive;
-        }
-
-        ul>li {
-            text-align: left;
-            padding-left: 49px;
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            font-weight: bold;
-            list-style: inside;
-            /*This positions the dots of the list inside*/
-        }
-
-        .dos {
-            color: green;
-        }
-
-        .donts {
-            color: red;
-        }
-
-        .container h2 {
-            color: rgb(228, 195, 10);
-        }
-
-        .faq p {
-            color: rgb(4, 53, 83);
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            text-align: left;
-            font-weight: bold;
-
-        }
-
-        .faq li {
-            margin: 33px;
-            list-style: inside;
-            font-weight: bold;
-        }
-
-        summary:hover{
-            color: blueviolet;
-            cursor: pointer;
-        }
-
-        /*Section area*/
-
-        section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #box1,
-        #box2,
-        #box3 {
-            border: 7px solid red;
-            height: 600px;
-            width: 450px;
-            margin: auto 20px;
-            background-color: wheat;
-            text-align: center;
-        }
-
-
-        #box1 img,
-        #box2 img,
-        #box3 img {
-            height: 450px;
-            width: 450px;
-        }
-
-        #box1 p,
-        #box2 p,
-        #box3 p {
-            font-family: 'Anton', sans-serif;
-            background-color: gold;
-            height: 35px;
-            
-        }
-
-        #box1 a:hover,
-        #box2 a:hover,
-        #box3 a:hover{
-            color: mediumblue;
-
-
-        } 
-
-        /*Footer area*/
-        footer {
-            background-color: black;
-            color: white;
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            display: flex;
-            justify-content: center;
-            border: gray solid 5px;
-            height: 100px;
-            width: 1520px;
-            margin-top: 10px;
-        }
-    </style>
-
-
-    <script>
-        function changeImage() {
-            var image = document.getElementById('changebg');
-            if (image.src.match("img1.jpg")) {
-                image.src = "img2.jpg";
-            }
-            else {
-                image.src = "img1.jpg";
-            }
-        }
-
-    </script>
 
 
 </head>
 
 <body>
-    <nav>
-        <div>
-            <img src="logo.png" alt="404 ERROR" id="imgnav">
+    <nav class="nav-bar">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="404 ERROR" id="imgnav">
         </div>
-        <li class="items"><a href="/">Home</a></li>
-        <li class="items"><a href="/">About</a></li>
-        <li class="items"><a href="/">MHFW website</a></li>
-        <li class="items"><a href="/">Hospitals</a></li>
-        <li class="items"><a href="/">Contact Us</a></li>
+        <ul class="link-container">
+            <li class="items"><a href="/" class="nav-link">Home</a></li>
+            <li class="items"><a href="/" class="nav-link">About</a></li>
+            <li class="items"><a href="/" class="nav-link">MHFW website</a></li>
+            <li class="items"><a href="/" class="nav-link">Hospitals</a></li>
+            <li class="items"><a href="/"class="nav-link">Contact Us</a></li>
+        </ul>
         <div class="navholder">
-            <button class="navbtn">vaccines</button>
+            <button class="navbtn">Vaccines</button>
             <button class="navbtn">Book now</button>
         </div>
     </nav>
 
     <div id="imgchanger">
-        <img id="changebg" src="img1.jpg" alt="ERROR">
+        <img id="changebg" src="assets/img1.jpg" alt="ERROR">
         <input type="button" onclick="changeImage()" value=">" id="bgbtn" />
 
     </div>
@@ -339,13 +65,13 @@
 
         <h2>How to protect yourself</h2>
         <h3 class="dos">What has to be done</h2>
-            <ul>
+            <ul class="dos-list">
                 <li>Maintain Hygiene</li>
                 <li>Practice Social Distancing</li>
                 <li>Seek Medical Help if Symptoms Occur</li>
             </ul>
             <h3 class="donts">what to be avoided</h3>
-            <ul>
+            <ul class="donts-list">
                 <li>Avoid Assuming That You are Immune to COVID-19</li>
                 <li> Don't Ignore Government-issued Advice</li>
                 <li>Avoid Stepping Out Without a Face Cover</li>
@@ -369,7 +95,7 @@
                     <summary>Are COVID-19 vaccines safe even though the vaccines were developed rapidly?</summary>
                     <p>While COVID-19 vaccines were developed rapidly, all steps were taken to make sure they are safe
                         and effective:
-                    <ul>
+                    <ul class="summary-list">
                         <li>Approach to Development – Scientists have been working for many years to develop vaccines
                             against viruses like the one that causes COVID-19. This knowledge helped speed up the
                             initial development of the current COVID-19 vaccines.</li>
@@ -389,35 +115,53 @@
 
     </div>
     <div class="video">
-        <iframe width="1800" height="315"
-            src="https://www.youtube.com/embed/-TPB-xePMcU?playlist=-TPB-xePMcU&loop=1&autoplay=1&mute=1&showinfo=0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <iframe width="500" height="315"
+        src="https://www.youtube.com/embed/-TPB-xePMcU?playlist=-TPB-xePMcU&loop=1&autoplay=1&mute=1&showinfo=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
-</body>
+    <section>
+        <div id="box">
+            <img src="assets/box1.png" alt="ERROR">
+            <p class="box-text">COVID-19 CHEAP EXPERT CARE</p>
+            <div class="box-link">
+                <a href="https://www.homecareexperts.com.au/" target="_blank">read more</a></p>
+            </div>
+        </div>
+    
+        <div id="box">
+            <img src="assets/box2.jpg" alt="ERROR">
+            <p class="box-text">COVID-19 AND THE EFFECT ON THE ECONOMY</p>
+            <div class="box-link">
+                <a href="https://timesofindia.indiatimes.com/readersblog/shreyansh-mangla/impact-of-covid-19-on-indian-economy-2-35042/" target="_blank"> read more</a>
+            </div>
+            
+        </div>
+    
+        <div id="box">
+            <img src="assets/box3.png" alt="ERROR">
+            <p >INTERNET GROWTH DUE TO COVID 19</p>
+            <div class="box-link">
+                <a href="https://www.internetsociety.org/resources/doc/2020/impact-of-covid-19-on-the-internet-ecosystem-in-mena/#:~:text=The%20Coronavirus%20(COVID%2D19),patients%20to%20access%20healthcare%20services." target="_blank">read more</a></p>
+            </div>
+        </div>
+    </section>
+        <footer>&copy;Govt.India| All rights reserved</footer>
+        <script>
+            function changeImage() {
+                var image = document.getElementById('changebg');
+                if (image.src.match("assets/img1.jpg")) {
+                    image.src = "assets/img2.jpg";
+                }
+                else {
+                    image.src = "assets/img1.jpg";
+                }
+            }
+    
+        </script>
+    </body>
 
-<section>
-    <div id="box1">
-        <img src="box1.png" alt="ERROR">
-        <p>COVID-19 CHEAP EXPERT CARE</p>
-        <p><a href="https://www.homecareexperts.com.au/" target="_blank">read more</a></p>
-    </div>
 
-    <div id="box2">
-        <img src="box2.jpg" alt="ERROR">
-        <p>COVID-19 AND THE EFFECT ON THE ECONOMY</p>
-        <p><a href="https://timesofindia.indiatimes.com/readersblog/shreyansh-mangla/impact-of-covid-19-on-indian-economy-2-35042/" target="_blank"> read more</a></p>
-        
-    </div>
-
-    <div id="box3">
-        <img src="box3.png" alt="ERROR">
-        <p>INTERNET GROWTH DUE TO COVID 19</p>
-        <p><a href="https://www.internetsociety.org/resources/doc/2020/impact-of-covid-19-on-the-internet-ecosystem-in-mena/#:~:text=The%20Coronavirus%20(COVID%2D19),patients%20to%20access%20healthcare%20services." target="_blank">read more</a></p>
-    </div>
-</section>
-
-<footer>&copy;Govt.India| All rights reserved</footer>
 
 </html>
